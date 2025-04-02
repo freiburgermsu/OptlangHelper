@@ -7,14 +7,14 @@ with open("README.rst") as f:
 
 setup(
     name="OptlangHelper",
-    version="0.0.1",
+    version="0.0.2",
     description="Python package for building Linear Programming models that are compatible with Optlang",
     long_description_content_type="text/x-rst",
     long_description=readme,
     author="Andrew Freiburger",
     author_email="afreiburger@anl.gov",
     url="https://github.com/Freiburgermsu/OptlangHelper",
-    packages=find_packages(exclude=("docs")),
+    packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Scientific/Engineering :: Bio-Informatics",
@@ -26,7 +26,6 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Natural Language :: English",
     ],
-    include_package_data =True,
     install_requires=[
         "optlang",
         # "glpk",

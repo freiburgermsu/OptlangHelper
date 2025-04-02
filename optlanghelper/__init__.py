@@ -12,4 +12,4 @@ logger = logging.getLogger(__name__)
 
 print("OptlangHelper", __version__)
 
-from optlanghelper import GLPKHelper, CPLEXHelper, GurobiHelper
+from optlanghelper import GLPKHelper, CPLEXHelper, GurobiHelper, Bounds, tupVariable, tupConstraint, tupObjective
